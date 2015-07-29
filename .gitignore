@@ -1,0 +1,5 @@
+target
+twitter-sign-in-example.iml
+src/main/resources/server-2.yml
+dependency-reduced-pom.xml
+.idea
