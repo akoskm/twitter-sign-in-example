@@ -2,8 +2,8 @@
 "Sign in with Twitter" server side application.
 
 ### Requirements
-1. Java 7
-2. Maven 3.x
+- Java 7
+- Maven 3.x
 
 ### Build
 mvn clean package
