@@ -10,7 +10,7 @@
     mvn clean package
 
 ### Pre-run
-Replace the temporary `consumerKey` and `consumerSecret` values in `src/main/resources/server.yml`
+Replace `consumerKey` and `consumerSecret` in `src/main/resources/server.yml` with your own values.
 
 ### Run
     java -jar target/twitter-sign-in-example-1.0-SNAPSHOT.jar server src/main/resources/server.yml
