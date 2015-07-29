@@ -4,6 +4,7 @@
 ### Requirements
 - Java 7
 - Maven 3.x
+- application and generated consumer key/secret on https://apps.twitter.com/
 
 ### Build
     mvn clean package
