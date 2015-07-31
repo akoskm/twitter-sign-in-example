@@ -31,6 +31,6 @@ server:
       keyStorePassword: example
       validateCerts: false
 
-# obtained these by creating an app on https://apps.twitter.com/
+# obtain these by creating an app on https://apps.twitter.com/
 consumerKey: ****************************
 consumerSecret: ****************************
