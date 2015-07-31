@@ -14,3 +14,5 @@ Replace `consumerKey` and `consumerSecret` in `src/main/resources/server.yml` wi
 
 ### Run
     java -jar target/twitter-sign-in-example-1.0-SNAPSHOT.jar server src/main/resources/server.yml
+
+Navigate to https://localhost:9090/twitter
