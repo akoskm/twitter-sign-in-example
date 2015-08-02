@@ -1,5 +1,5 @@
 # twitter-sign-in-example
-Sign in with Twitter in a web application.
+Sign in with Twitter in web applications.
 
 ### Requirements
 - Java 7
