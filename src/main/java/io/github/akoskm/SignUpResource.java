@@ -1,12 +1,12 @@
 package io.github.akoskm;
 
-import org.scribe.builder.ServiceBuilder;
-import org.scribe.builder.api.TwitterApi;
-import org.scribe.model.OAuthRequest;
-import org.scribe.model.Token;
-import org.scribe.model.Verb;
-import org.scribe.model.Verifier;
-import org.scribe.oauth.OAuthService;
+import com.github.scribejava.core.builder.ServiceBuilder;
+import com.github.scribejava.apis.TwitterApi;
+import com.github.scribejava.core.model.OAuthRequest;
+import com.github.scribejava.core.model.Token;
+import com.github.scribejava.core.model.Verb;
+import com.github.scribejava.core.model.Verifier;
+import com.github.scribejava.core.oauth.OAuthService;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -69,10 +69,10 @@ public class SignUpResource {
         // POST oauth/access_token
         Token accessToken = service.getAccessToken(requestToken, verifier);
 
-        OAuthRequest request = new OAuthRequest(Verb.GET, PROTECTED_RESOURCE_URL);
+        OAuthRequest request = new OAuthRequest(Verb.GET, PROTECTED_RESOURCE_URL, service);
         service.signRequest(accessToken, request);
 
-        org.scribe.model.Response response = request.send();
+        com.github.scribejava.core.model.Response response = request.send();
 
         return Response.ok(response.getBody()).build();
     }
